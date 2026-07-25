@@ -1,16 +1,31 @@
-# React + Vite
+# 🍽️ Recipe App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React.js recipe browsing application featuring user authentication, protected routes, recipe search & sorting, wishlist, cart, and a responsive UI.
 
-Currently, two official plugins are available:
+> ⚠️ Note: The repo is currently named `e-commerce`, but the app itself is a **recipe discovery platform** built on the [DummyJSON Recipes API](https://dummyjson.com/recipes) — consider renaming the repo to something like `recipe-app` for clarity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 About
 
-## React Compiler
+This app lets users browse recipes fetched live from an API, search and sort them by rating, add recipes to a wishlist, sign up / log in, and manage a cart — all protected behind authentication using React Router's protected routes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔐 **User Authentication** — Sign up and log in (stored via `localStorage`)
+- 🛡️ **Protected Routes** — Cart page accessible only to logged-in users
+- 🔍 **Recipe Search & Sort** — Search recipes by name, sort by rating (asc/desc)
+- ❤️ **Wishlist** — Add/remove recipes to a personal wishlist
+- 🛒 **Cart & Orders** — View cart and past orders
+- 🖼️ **Lazy-loaded Images** — Smooth image loading with blur effect
+- 📱 **Responsive UI**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **React 19**
+- **Vite** — build tool & dev server
+- **React Router DOM v7** — routing & protected routes
+- **Axios** — API requests
+- **react-lazy-load-image-component** — optimized image loading
+- **DummyJSON API** — recipe data source
+- **ESLint** — code linting
+
+## 📂 Project Structure
